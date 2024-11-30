@@ -1,9 +1,10 @@
 
 @media(max-width: 575.98px) { 
-    #post .poster .main {
-        width: 90%;
+    .logo {
+        font-size: 25px;
+        letter-spacing: 1px;
     }
-    #post .poster .mainPost .imgVideo {
-        height: 200px;
+    #foot .footbox .FormExtend {
+        width: 55%;
     }
  }
