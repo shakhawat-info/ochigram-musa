@@ -18,11 +18,8 @@
   letter-spacing: 2px;
 }
 body {
-  display: flex;
-  flex-direction: column-reverse;
-  height: 100vh;
+  height: 100%;
   position: relative;
-  justify-content: space-between;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -51,10 +48,18 @@ select {
   text-transform: capitalize;
   font-size: 11px;
 }
+
+main{
+  height: 100%;
+}
 /* commom css end */
 /* nav start */
 #navigation {
-  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0 0;
   box-shadow: 0px -15px 10px -20px rgba(0, 0, 0, 0.45);
 }
 #navigation .navIcons {
@@ -62,17 +67,22 @@ select {
   justify-content: space-between;
 }
 #navigation .navIcons .navicon a {
-  padding:  10px;
+  padding:  10px 20px;
   color: #65686c;
 }
 #navigation .navIcons .navicon.active a{
   color: #0e7be0;
+  border-bottom: 2px solid #0e7be0;
 }
 /* nav end */
 
 
 /* footer start */
 #foot{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 10px 0;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
 }
@@ -92,11 +102,11 @@ select {
   -o-border-radius: 20px;
   overflow: hidden;
   position: relative;
-  transition: .8s;
-  -webkit-transition: .8s;
-  -moz-transition: .8s;
-  -ms-transition: .8s;
-  -o-transition: .8s;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
 }
 #foot .footbox .FormExtend{
   border: 1px solid rgba(101, 104, 108, 0.3);
