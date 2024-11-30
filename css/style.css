@@ -44,9 +44,8 @@ i{
 }
 select {
   border: none;
-  padding: 2px 10px;
   text-transform: capitalize;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 main{
@@ -129,7 +128,59 @@ main{
   right: 0;
 }
 /* footer end */
-
 main{
   padding: 100px 0;
 }
+/* poster start */
+#poster{
+  padding: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+#poster h2{
+  text-align: center;
+  margin-top: 10px;
+}
+#poster .posterClose{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-bottom-left-radius: 10px;
+}
+#poster .posterid{
+  display: flex;
+  column-gap: 10px;
+  margin-top: 15px;
+}
+#poster .posterid img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#poster .posterid .nmVisiblity h6{
+  font-size: 20px;
+}
+#poster .posterid .nmVisiblity select{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 5px 10px;
+}
+/* poster end */
+
