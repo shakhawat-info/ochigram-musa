@@ -10,4 +10,11 @@
     #foot .footbox form input {
         padding: 2px 40px 2px 10px;
     }
+    #foot .footbox form{
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        -o-transition: .2s;
+}
  }

@@ -11,6 +11,7 @@ NavList.forEach((item) => {
 
 
 
+
 let searchForm = document.querySelector('.searchForm');
 searchForm.addEventListener('click' , (event)=>{
   searchForm.classList.add('FormExtend');
