@@ -41,6 +41,7 @@
 
 #poster .postBox .addpost{
     border: none;
+    overflow: hidden;
 }
 #poster .postBox .addpost .adPostList li {
     position: relative;
