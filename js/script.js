@@ -38,5 +38,11 @@ function post(){
 }
 
 
-
+let postoptions = document.querySelector('.postoptions');
+function postoptionshow(){
+  postoptions.style.right = '0' 
+}
+function postoptionclose(){
+  postoptions.style.right = '-300px' 
+}
 // poster end

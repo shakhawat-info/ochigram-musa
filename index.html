@@ -40,34 +40,21 @@
               </select>
             </div>
           </div>
-          <textarea name="postText" id="postText" oninput="post()" placeholder="What's on your mind , Md. Tanvir?"></textarea>
-          <div class="addpost">
-            <h4>Add your post</h4>
-            <ul class="adPostList">
-              <li style="color: rgb(77, 196, 77)">
-                <i class="fa-regular fa-image"></i>
-                <input type="file" name="fostfile" id="fostfile" style="opacity: 0;">
-                <span>Photo/video</span>
-              </li>
-              <li style="color: rgb(14, 123, 224)">
-                <i class="fa-solid fa-user-tag"></i>
-                <span>Tag people</span>
-              </li>
-              <li style="color: rgb(235, 186, 66)">
-                <i class="fa-regular fa-face-smile"></i>
-                <span>Felling/activity</span>
-              </li>
-              <li style="color: rgb(255, 0, 0)">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Check in</span>
-              </li>
-              <li style="color: #636060">
-                <i class="fa-solid fa-ellipsis"></i>
-                <span>More</span>
-              </li>
-            </ul>
+          <div class="postItem">
+            <textarea name="postText" id="postText" oninput="post()" placeholder="What's on your mind , Md. Tanvir?"></textarea>
+            <div class="photoVideo">
+              <button type="button" class="postmorebtn" onclick="postoptionshow()" ><i class="fa-solid fa-ellipsis-vertical"></i></button>
+              <img src="image/imglogo.png" alt="imglogo">
+              <ul class="postoptions">
+                <button type="button" class="postoptionclose" onclick="postoptionclose()"><i class="fa-solid fa-xmark"></i></button>
+                <li><i class="fa-solid fa-paperclip"></i><button type="button">Form link</button></li>
+                <li><i class="fa-solid fa-arrow-up-from-bracket"></i><button type="button">Upload</button></li>
+                <li><i class="fa-solid fa-rotate-right"></i><button type="button">Reset</button></li>
+              </ul>
+              <!-- <i class="fa-regular fa-image"></i> -->
+            </div>
           </div>
-          <button type="button" class="postbtn">Post</button>
+          <button type="button" class="postbtn">Publish</button>
         </div>
        </section>
       <!-- poster end -->
