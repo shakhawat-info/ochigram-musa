@@ -27,40 +27,10 @@
 #poster .postBox textarea {
     height: 170px;
 }
-#poster .postBox .addpost {
-    padding: 5px;
-    margin-top: 5px;
+  #poster .postBox .photoVideo {
+    height: 170px;
+    display: grid;
+    place-items: center;
 }
-#poster .postBox .addpost h4 {
-    display: none;
-}
-#poster .postBox .addpost .adPostList {
-    flex-direction: column;
-    width: 100%;
-}
-
-#poster .postBox .addpost{
-    border: none;
-    overflow: hidden;
-}
-#poster .postBox .addpost .adPostList li {
-    position: relative;
-}
-#poster .postBox .addpost .adPostList li::after{
-    content: '';
-    width: 140%;
-    height: 1px ;
-    background-color: rgba(101, 104, 108, 0.2);
-    position: absolute;
-    top: 0;
-    left: -10%;
-}
-#poster .postBox .addpost .adPostList li i{
-    width: 30px;
-}
-#poster .postBox .addpost .adPostList li span{
-    display: inline-block;
-  color: #65686c;
-  }
 /* poster end */
  }
