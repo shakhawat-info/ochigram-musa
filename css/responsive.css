@@ -1,36 +1,66 @@
-
-@media(max-width: 575.98px) { 
-    .logo {
-        font-size: 25px;
-        letter-spacing: 1px;
-    }
-    #foot .footbox .FormExtend {
-        width: 55%;
-    }
-    #foot .footbox form input {
-        padding: 2px 40px 2px 10px;
-    }
-    #foot .footbox form{
-        transition: .2s;
-        -webkit-transition: .2s;
-        -moz-transition: .2s;
-        -ms-transition: .2s;
-        -o-transition: .2s;
+@media (max-width: 575.98px) {
+  /* common css start */
+  i {
+    font-size: 13px;
+  }
+  /* common css end */
+  .logo {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  #foot .footbox form input {
+    padding: 2px 5px 2px 24px;
 }
-
-
-
-/* poster start */
-#poster {
+  #foot .footbox form {
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  #foot .footbox .FormExtend {
+    width: 100%;
+    margin-right: 25px;
+  }
+  #foot .footbox form {
+    height: 35px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  #foot .footbox .searchResetbtn {
+      right: -110%;
+    }
+    #foot .footbox .searchResetbtn i{
+        font-size: 20px;
+    }
+  /* poster start */
+  #poster {
+    padding: 0px;
+  }
+  #poster .mainPoster {
     max-width: 100%;
-}
-#poster .postBox textarea {
-    height: 170px;
-}
+    height: 100%;
+  }
+  #poster .postBox textarea {
+    height: 100px;
+    color: #000000;
+    font-size: 14px;
+  }
   #poster .postBox .photoVideo {
-    height: 170px;
-    display: grid;
-    place-items: center;
+    height: 150px;
+  }
+  #poster .postBox .photoVideo .postoptions button {
+    font-size: 14px;
+  }
+  #poster .postBox .photoVideo .postoptions li {
+    padding: 7px;
+    align-items: center;
+  }
+  #poster .postBox .photoVideo .postoptions li i {
+    width: 15px;
+  }
+  /* poster end */
 }
-/* poster end */
- }

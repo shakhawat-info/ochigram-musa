@@ -9,17 +9,24 @@ NavList.forEach((item) => {
 });
 // nav end
 
+// search box start
 let searchForm = document.querySelector('.searchForm');
+let logo = document.querySelector('.logo');
+let foot = document.querySelector('#foot');
 searchForm.addEventListener('click' , (event)=>{
   searchForm.classList.add('FormExtend');
+  logo.style.display = 'none'
   event.stopPropagation();
+  foot.stopPropagation();
 })
 
 document.querySelector('body').addEventListener('click' , ()=>{
   searchForm.classList.remove('FormExtend');
-
+  logo.style.display = 'inline-block'
+  
 })
 
+// search box end
 
 
 // poster start
@@ -45,4 +52,18 @@ function postoptionshow(){
 function postoptionclose(){
   postoptions.style.right = '-300px' 
 }
+
+
+
+let plusPost = document.querySelector('.plusPost');
+let poster = document.querySelector('#poster');
+let posterClose = document.querySelector('.posterClose');
+
+plusPost.addEventListener('click' , ()=>{
+  poster.classList.add('showPoster');
+})
+posterClose.addEventListener('click' , ()=>{
+  poster.classList.remove('showPoster');
+})
+
 // poster end
