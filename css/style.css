@@ -146,9 +146,110 @@ main{
   left: 0;
 }
 /* footer end */
-main{
-  padding: 100px 0;
+/* story start */
+#story{
+  padding: 80px 5px 10px;
 }
+#story .StoryBox{
+  display: flex;
+  column-gap: 10px;
+}
+#story .StoryBox .StoryCreator{
+  position: relative;
+  background-color: #fff;
+  min-width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+#story .StoryBox .StoryCreator img{
+  height: 80%;
+  object-fit: cover;
+}
+#story .StoryBox .StoryCreator h3{
+  text-align: center;
+  margin-top: 10px;
+  
+}
+#story .StoryBox .StoryCreator i{
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #ff045c;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #fff;
+}
+#story .StoryBox .stories{
+  height: 200px;
+  display: flex;
+  overflow: hidden;
+}
+#story .StoryBox .stories .item{
+  position: relative;
+  margin: 0 5px;
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+#story .StoryBox .stories .item .stryImg{
+  height: 100%;
+}
+#story .StoryBox .stories .item .profile{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid #ff045c;
+}
+#story .StoryBox .stories .item h5{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #ff045c;
+  z-index: 1;
+  font-size: 14px;
+}
+#story .StoryBox .stories .item h5::after {
+  content: '';
+  width: 300%;
+  height: 120%;
+  background-color: #fff;
+  position: absolute;
+  top: -5%;
+  left: -10%;
+  z-index: -1;
+}
+/* story end */
 /* poster start */
 #poster{
   background-color: rgba(0, 0, 0, 0.4);

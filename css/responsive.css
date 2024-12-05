@@ -10,7 +10,7 @@
   }
   #foot .footbox form input {
     padding: 2px 5px 2px 24px;
-}
+  }
   #foot .footbox form {
     transition: 0.2s;
     -webkit-transition: 0.2s;
@@ -31,11 +31,55 @@
     -o-border-radius: 15px;
   }
   #foot .footbox .searchResetbtn {
-      right: -110%;
-    }
-    #foot .footbox .searchResetbtn i{
-        font-size: 20px;
-    }
+    right: -110%;
+  }
+  #foot .footbox .searchResetbtn i {
+    font-size: 20px;
+  }
+
+  /* story start */
+  #story {
+    padding: 65px 0px 5px;
+  }
+  #story .StoryBox {
+    column-gap: 5px;
+  }
+  #story .StoryBox .StoryCreator {
+    min-width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #story .StoryBox .stories {
+    height: 150px;
+  }
+  #story .StoryBox .stories .item {
+    height: 150px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 0 2px;
+  }
+  #story .StoryBox .stories .item h5 {
+    font-size: 12px;
+  }
+  #story .StoryBox .stories .item .profile {
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  #story .StoryBox .StoryCreator h3 {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 12px;
+  }
+  /* story end */
   /* poster start */
   #poster {
     padding: 0px;
