@@ -18,7 +18,6 @@
   letter-spacing: 2px;
 }
 body {
-  overflow: hidden;
   height: 100vh;
   position: relative;
 }
@@ -57,6 +56,7 @@ main{
 /* commom css end */
 /* nav start */
 #navigation {
+  background-color: #fff;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -79,182 +79,13 @@ main{
 /* nav end */
 
 
-/* footer start */
-#foot{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 0;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
-}
-#foot .footbox{
-  display: flex;
-  justify-content: space-between;
-}
-#foot .footbox form{
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  width: 43px;
-  height: 50px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  /* overflow: hidden; */
-  position: relative;
-  transition: .4s;
-  -webkit-transition: .4s;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
-}
-#foot .footbox .searchResetbtn{
-  position: absolute;
-  top: 0;
-  right: -103%;
-  z-index: -1;
-}
-#foot .footbox form .searchResetbtn{
-  display: none;
-}
-#foot .footbox .FormExtend{
-  border: 1px solid rgba(101, 104, 108, 0.3);
-  width: 100%;
-  margin-right: 60px;
-}
-#foot .footbox form.FormExtend .searchResetbtn{
-  display: inline;
-}
-#foot .footbox form input{
-  width: 100%;
-  height: 70%;
-  padding: 2px 5px 2px 35px;
-  margin: 0 5px;
-  border: none;
-  color: #65686c;
-}
-#foot .footbox form button{
-  border: none;
-  background-color: transparent;
-  padding: 0 10px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* footer end */
-/* story start */
-#story{
-  padding: 80px 5px 10px;
-}
-#story .StoryBox{
-  display: flex;
-  column-gap: 10px;
-}
-#story .StoryBox .StoryCreator{
-  position: relative;
-  background-color: #fff;
-  min-width: 150px;
-  height: 200px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  overflow: hidden;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  cursor: pointer;
-}
-#story .StoryBox .StoryCreator img{
-  height: 80%;
-  object-fit: cover;
-}
-#story .StoryBox .StoryCreator h3{
-  text-align: center;
-  margin-top: 10px;
-  
-}
-#story .StoryBox .StoryCreator i{
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  background-color: #ff045c;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  color: #fff;
-}
-#story .StoryBox .stories{
-  height: 200px;
-  display: flex;
-  overflow: hidden;
-}
-#story .StoryBox .stories .item{
-  position: relative;
-  margin: 0 5px;
-  width: 150px;
-  height: 200px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  overflow: hidden;
-}
-#story .StoryBox .stories .item .stryImg{
-  height: 100%;
-}
-#story .StoryBox .stories .item .profile{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border: 2px solid #ff045c;
-}
-#story .StoryBox .stories .item h5{
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: #ff045c;
-  z-index: 1;
-  font-size: 14px;
-}
-#story .StoryBox .stories .item h5::after {
-  content: '';
-  width: 300%;
-  height: 120%;
-  background-color: #fff;
-  position: absolute;
-  top: -5%;
-  left: -10%;
-  z-index: -1;
-}
-/* story end */
+
+
 /* poster start */
 #poster{
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
-  top: 110%;
+  top: 0%;
   left: 0;
   padding: 10px;
   margin: 0 auto;
@@ -272,10 +103,18 @@ main{
   -ms-transition: .4s;
   -o-transition: .4s;
   z-index: 9;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
 }
 #poster.showPoster{
-  top: 0;
-  left: 0;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
 }
 #poster .mainPoster{
   overflow: hidden;
@@ -435,3 +274,107 @@ main{
 }
 /* poster end */
 
+/* footer start */
+#foot{
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+  z-index: 1;
+}
+#foot .footbox{
+  display: flex;
+  justify-content: space-between;
+}
+#foot .footbox form{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 43px;
+  height: 50px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  /* overflow: hidden; */
+  position: relative;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+#foot .footbox .searchResetbtn{
+  position: absolute;
+  top: 0;
+  right: -103%;
+  z-index: -1;
+}
+#foot .footbox form .searchResetbtn{
+  display: none;
+}
+#foot .footbox .FormExtend{
+  border: 1px solid rgba(101, 104, 108, 0.3);
+  width: 100%;
+  margin-right: 60px;
+}
+#foot .footbox form.FormExtend .searchResetbtn{
+  display: inline;
+}
+#foot .footbox form input{
+  width: 100%;
+  height: 70%;
+  padding: 2px 5px 2px 35px;
+  margin: 0 5px;
+  border: none;
+  color: #65686c;
+}
+#foot .footbox form button{
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#foot .footNav {
+  border-top: 1px solid rgba(101, 104, 108, 0.2);
+  margin-top: 5px;
+  position: absolute;
+  bottom: -51px;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+}
+#foot .footNav .footNavList{
+  display: flex;
+  justify-content: space-between;
+}
+#foot .footNav .footNavList img{
+  width: 35px;
+}
+#foot .footNav.footNavHide{
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* footer end */
