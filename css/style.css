@@ -71,6 +71,12 @@ main{
 #navigation .navIcons .navicon a {
   padding:  10px 20px;
   color: #65686c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  row-gap: 5px;
+  font-weight: 500;
 }
 #navigation .navIcons .navicon.active a{
   color: #0e7be0;
@@ -364,6 +370,10 @@ main{
 }
 #foot .footNav .footNavList img{
   width: 35px;
+}
+#foot .footNav .footNavList li{
+  padding: 2px 10px;
+  cursor: pointer;
 }
 #foot .footNav.footNavHide{
   transition: .4s;

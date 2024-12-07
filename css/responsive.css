@@ -8,6 +8,14 @@
     font-size: 25px;
     letter-spacing: 1px;
   }
+  /* nav start */
+  #navigation{
+    padding: 0;
+  }
+  #navigation .navIcons .navicon a span{
+    display: none;
+}
+  /* nav end */
 
   /* poster start */
   #poster {
@@ -68,6 +76,9 @@
 }
 #foot .footNav {
   bottom: -35px;
+}
+#foot .footNav .footNavList {
+  margin: 0 50px;
 }
 #foot .footNav .footNavList img {
   width: 25px;

@@ -88,8 +88,6 @@ window.addEventListener("scroll", function () {
     footNav.classList.remove('footNavHide')
 
   }
-
-
   lastScrollTop = currentScrollTop;
 });
 
