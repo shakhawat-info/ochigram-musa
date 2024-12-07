@@ -83,5 +83,8 @@
 #foot .footNav .footNavList img {
   width: 25px;
 }
+#foot .footNav .footNavList li span{
+  display: none;
+}
 /* footer end */
 }

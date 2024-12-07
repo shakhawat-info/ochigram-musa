@@ -91,6 +91,24 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScrollTop;
 });
 
+
+
+// foot nav 
+const footNavList = document.querySelectorAll('.footNavList li');
+
+footNavList.forEach((item) => {
+  item.addEventListener('click', function () {
+  
+    footNavList.forEach((deactive)=>{
+      deactive.classList.remove('active')
+    })
+
+    this.classList.add('active');
+    
+  });
+});
+
+
 // footer end
 
 	
