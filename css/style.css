@@ -11,7 +11,7 @@
 }
 .logo{
   font-family: "Rowdies", sans-serif;
-  color: rgb(255, 4, 92);
+  color: #ff045c;
   font-size: 40px;
   text-transform: capitalize;
   font-weight: 900;
@@ -85,6 +85,11 @@ main{
 #navigation .navIcons .navicon.active {
   color: #ff045c;
   border-bottom: 2px solid #ff045c;
+}
+#navigation .navIcons .navicon.plusPost{
+  width: 95px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 /* nav end */
 
