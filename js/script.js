@@ -57,15 +57,6 @@ function post(){
 }
 
 
-let postoptions = document.querySelector('.postoptions');
-function postoptionshow(){
-  postoptions.style.right = '0' 
-}
-function postoptionclose(){
-  postoptions.style.right = '-300px' 
-}
-
-
 
 let plusPost = document.querySelector('.plusPost');
 let poster = document.querySelector('#poster');
@@ -77,6 +68,44 @@ plusPost.addEventListener('click' , ()=>{
 posterClose.addEventListener('click' , ()=>{
   poster.classList.remove('showPoster');
 })
+
+
+
+// post Visiblity
+
+let postvisiblity = document.querySelector('.postvisiblity');
+
+postvisiblity.style.display = 'none';
+
+function postvisiblityBox(){
+  postvisiblity.style.height = 'auto';
+}
+
+let postVisiList = document.querySelectorAll('.postvisiblity li');
+
+let postType = document.querySelector('.postType');
+
+postType.addEventListener('click' , ()=>{
+  postvisiblity.style.display = 'block';
+})
+postVisiList.forEach((item)=>{
+  item.addEventListener('click' , ()=>{
+    postType.innerHTML = item.innerHTML;
+    postvisiblity.style.height = '0';
+    postvisiblity.style.display = 'none';
+  })
+})
+
+
+let photoVideo = document.querySelector('.photoVideo');
+let postoptions =  document.querySelector('.postoptions');
+
+photoVideo.addEventListener('click' , ()=>{
+  postoptions.classList.toggle('PostoptionShow')
+})
+
+
+
 
 // poster end
 
