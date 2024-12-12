@@ -26,7 +26,7 @@
     height: 100%;
   }
   #poster .postBox textarea {
-    height: 100px;
+    height: 45px;
     color: #000000;
     font-size: 14px;
   }
@@ -43,6 +43,12 @@
   #poster .postBox .photoVideo .postoptions li i {
     width: 15px;
   }
+  #poster .posterid .nmVisiblity h6 {
+    font-size: 15px;
+}
+#poster h2 {
+  font-size: 20px;
+}
   /* poster end */
 
 /* footer start */
@@ -76,9 +82,6 @@
 }
 #foot .footNav {
   bottom: -35px;
-}
-#foot .footNav .footNavList {
-  margin: 0 50px;
 }
 #foot .footNav .footNavList img {
   width: 25px;

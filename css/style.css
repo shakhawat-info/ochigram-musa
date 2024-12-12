@@ -109,18 +109,10 @@ main{
   -ms-transition: .4s;
   -o-transition: .4s;
   z-index: 9;
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
+  display: none;
 }
 #poster.showPoster{
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
+  display: block;
 }
 #poster .mainPoster{
   overflow: hidden;
@@ -280,6 +272,54 @@ main{
 }
 /* poster end */
 
+/* account start */
+#account{
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 2; */
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#account .AccBox{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+#account .AccBox .topacc{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#account .AccBox .topacc > div{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+#account .AccBox .AccProfile{
+  display: flex;
+  column-gap: 20px;
+}
+#account .AccBox .AccProfile img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#account .AccBox .AccProfile .proIDnmbr{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+}
+/* account end */
+
 /* footer start */
 #foot{
   background-color: #fff;
@@ -294,60 +334,66 @@ main{
 #foot .footbox{
   display: flex;
   justify-content: space-between;
+  height: 50px;
+  position: relative;
 }
 #foot .footbox form{
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  width: 43px;
-  height: 50px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  /* overflow: hidden; */
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
   transition: .4s;
   -webkit-transition: .4s;
   -moz-transition: .4s;
   -ms-transition: .4s;
   -o-transition: .4s;
 }
-#foot .footbox .searchResetbtn{
-  position: absolute;
-  top: 0;
-  right: -103%;
-  z-index: -1;
+#foot .footbox form input{
+  width: 95%;
+}
+#foot .footbox form.FormExtend{
+  width: 100%;
 }
 #foot .footbox form .searchResetbtn{
-  display: none;
-}
-#foot .footbox .FormExtend{
-  border: 1px solid rgba(101, 104, 108, 0.3);
-  width: 100%;
-  margin-right: 60px;
-}
-#foot .footbox form.FormExtend .searchResetbtn{
-  display: inline;
-}
-#foot .footbox form input{
-  width: 100%;
-  height: 70%;
-  padding: 2px 5px 2px 35px;
-  margin: 0 5px;
-  border: none;
-  color: #65686c;
-}
-#foot .footbox form button{
+  position: absolute;
+  top: 16%;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: transparent;
-  padding: 0 10px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
+#foot .footbox form .searchResetbtn i{
+  font-size: 30px;
+}
+#foot .footbox form .searchResetbtn , #foot .footbox form .searchInput{
+  display: none;
+}
+#foot .footbox form.FormExtend .searchResetbtn , #foot .footbox form.FormExtend .searchInput{
+  display: inline-block;
+  
+}
+#foot .footbox form.FormExtend .searchInput{
+  height: 100%;
+  margin-left: 47px;
+  padding: 0 15px;
+  font-size: 18px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#foot .footbox form .searchBtn{
+  position: absolute;
+  top: -5%;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+}
+
+
 #foot .footNav {
   border-top: 1px solid rgba(101, 104, 108, 0.2);
   margin-top: 5px;

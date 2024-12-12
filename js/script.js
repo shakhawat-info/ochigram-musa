@@ -13,18 +13,30 @@ NavList.forEach((item) => {
 let searchForm = document.querySelector('.searchForm');
 let logo = document.querySelector('.logo');
 let foot = document.querySelector('#foot');
+let searchResetbtn = document.querySelector('.searchResetbtn');
+
 searchForm.addEventListener('click' , (event)=>{
   searchForm.classList.add('FormExtend');
   logo.style.display = 'none'
   event.stopPropagation();
   foot.stopPropagation();
 })
-
-document.querySelector('body').addEventListener('click' , ()=>{
+searchResetbtn.addEventListener('click' , ()=>{
   searchForm.classList.remove('FormExtend');
-  logo.style.display = 'inline-block'
-  
+  logo.style.display = 'inline-block';
 })
+
+// document.querySelector('body').addEventListener('click' , ()=>{
+//   searchForm.classList.remove('FormExtend');
+//   logo.style.display = 'inline-block'
+  
+// })
+
+let searchInput = document.querySelector('.searchInput');
+
+function searchInputbg(){
+  searchInput.style.background = '#d6d0d0'
+}
 
 // search box end
 
